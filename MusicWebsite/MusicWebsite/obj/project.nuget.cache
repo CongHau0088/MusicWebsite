@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Zqn4Ql4DYBWrkdHB4BU1xSKi5082xzRPyPbh+XxGrzK1QVjgohTumV4FxWeps3keIw4KwyIz/ySCM1tMqJH02Q==",
+  "dgSpecHash": "MQeZ7ha6RuuAfxKeUWSr6QWWTo1zsowr67tCrkpl8N6pia4aPBIoTG4JG4k80lhhLSXmCLc6rr4KPzHcEstdQw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ADMIN\\OneDrive\\Desktop\\MusicWebsite\\MusicWebsite\\MusicWebsite\\MusicWebsite.csproj",
+  "projectFilePath": "C:\\Users\\ADMIN\\OneDrive\\Documents\\MusicWebsite\\MusicWebsite\\MusicWebsite\\MusicWebsite.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
