@@ -46,7 +46,6 @@
                                 <li class="active"><a href="index">Home</a></li>
                                 <li><a href="about">About</a></li>
                                 <li><a href="discography">Discography</a></li>
-                                <li><a href="./tours.html">Tours</a></li>
                                 <li><a href="./videos.html">Videos</a></li>
                                 <li><a href="#">Pages</a>
                                     <ul class="dropdown">
@@ -55,11 +54,14 @@
                                         <li><a href="./blog-details.html">Blog Details</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="./contact.html">Contact</a></li>
-                                <li><a href="auth/index">Login</a></li>
-                               
-                               
                                 
+                                <!-- <li><a href="auth/index">Login</a></li>-->
+                                @if (Context.Session.GetString("username") != null)
+                                {
+                                    <li><p href="#" style="color:white;">@Context.Session.GetString("username")</p></li>
+                                }
+                                <li><a href=/auth/logout>Logout</a></li>
+                            
                             </ul>
                         </nav>
                         
@@ -133,6 +135,19 @@
     <!-- Music Plugin -->
     <script src="~/user/js/jquery.jplayer.min.js"></script>
     <script src="~/user/js/jplayerInit.js"></script>
+    <style>
+        /* CSS styles here */ .header__menu ul li a {
+            color:white;
+            background-color: transparent;
+            transition: color 0.3s, background-color 0.3s;
+        }
+
+            .header__menu ul li a:hover {
+                color: blue;
+                
+            }
+    </style>
+    <script> // JavaScript code here document.addEventListener('DOMContentLoaded', function () { var menuItems = document.querySelectorAll('.header__menu ul li a'); menuItems.forEach(function (item) { item.addEventListener('mouseenter', function () { this.style.color = '#ffffff'; this.style.backgroundColor = '#ff0000'; }); item.addEventListener('mouseleave', function () { this.style.color = 'black'; this.style.backgroundColor = 'transparent'; }); }); }); </script>
 </body>
 
 </html>

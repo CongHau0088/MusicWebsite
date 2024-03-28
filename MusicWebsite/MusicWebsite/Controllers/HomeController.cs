@@ -4,15 +4,15 @@ using System.Diagnostics;
 
 namespace MusicWebsite.Controllers
 {
-    [Route("/")]
+    //[Route("")]
     [Route("home")]
     public class HomeController : Controller
     {
 
         [Route("index")]
-        [Route("~/")]
         public IActionResult Index()
         {
+            ViewBag.username = HttpContext.Session.GetString("username");
             return View("index");
         }
        
